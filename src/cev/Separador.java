@@ -16,7 +16,7 @@ public class Separador implements ISeparador {
      * Return: <br>
      * String[] "THIS", "STRING", "WILL", "BE", "SEPARATED", "IN", "ARRAYS", "FOR", "EACH", "SPACE", "OR" "","" **/
     @Override
-    public String[] separar(String txt)  {
+    public final String[] separar(String txt)  {
         try {
             this.setTxt(txt);
             if (this.isSpr()) {

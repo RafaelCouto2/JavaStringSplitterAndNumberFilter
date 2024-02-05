@@ -1,6 +1,6 @@
 package cev;
-
-public class Separador implements ISeparador {
+//REMEMBER! CHANGE THE PACKAGE NAME!
+public class StringSplitter implements IStringSplitter {
 
 
     //SEPARA, A CADA ESPAÇAMENTO, SUBSTRINGS DE UMA STRING EM UM VETOR DE STRINGS.

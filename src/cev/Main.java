@@ -4,7 +4,7 @@ package cev;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Separador s1 = new Separador();
+        StringSplitter s1 = new StringSplitter();
         String teste = "EMPTY OR NULL";
 
         for(String a : s1.split(teste)) {

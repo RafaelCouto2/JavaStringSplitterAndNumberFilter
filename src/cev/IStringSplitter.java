@@ -1,6 +1,6 @@
 package cev;
 
-public interface ISeparador {
+public interface IStringSplitter {
 
     String[] split(String txt);
 

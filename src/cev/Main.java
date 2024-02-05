@@ -7,7 +7,7 @@ public class Main {
         Separador s1 = new Separador();
         String teste = "EMPTY OR NULL";
 
-        for(String a : s1.separar(teste)) {
+        for(String a : s1.split(teste)) {
             System.out.println(a);
         }
     }

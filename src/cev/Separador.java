@@ -8,8 +8,15 @@ public class Separador implements ISeparador {
     private String[] sArray;
     private boolean spr;
 
+    /** Return the substrings of this in a String Arrays.
+     * Example: <br>
+     * String ex = "THIS STRING WILL BE SEPARATED IN ARRAYS FOR EACH SPACE OR \",\" .";
+     * <br>
+     * <br>
+     * Return: <br>
+     * String[] "THIS", "STRING", "WILL", "BE", "SEPARATED", "IN", "ARRAYS", "FOR", "EACH", "SPACE", "OR" "","" **/
     @Override
-    public String[] separar(String txt) {
+    public String[] separar(String txt)  {
         try {
             this.setTxt(txt);
             if (this.isSpr()) {

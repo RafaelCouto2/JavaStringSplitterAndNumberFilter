@@ -1,6 +1,6 @@
 package cev;
 
-public final class NumberFilter {
+public final class NumberFilter implements INumberFilter{
     private StringSplitter rootString;
     private float[] numbers;
 
@@ -17,9 +17,10 @@ public final class NumberFilter {
         this.setNumbers(new float[totnumber]);
     }
 
+    @Override
     public float[] filterNumber(){
         int numberArrayPos = 0;
-        boolean found = false;
+        boolean found;
         try {
             for (int c = 0; c < this.getRootString().getsArray().length; c++) {
                 for (int i = 0; i < this.getRootString().getsArray()[c].length(); i++) {

@@ -5,7 +5,7 @@ package cev;
 public class Main {
     public static void main(String[] args) {
         StringSplitter s1 = new StringSplitter();
-        String teste = "EMPTY 1 OR NULL";
+        String teste = "EMPTY 66 OR 021 NULL";
 
         for(String a : s1.split(teste)) {
             System.out.println(a);

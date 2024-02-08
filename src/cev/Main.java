@@ -7,12 +7,14 @@ public class Main {
         StringSplitter s1 = new StringSplitter();
         String teste = "EMPTY 66 OR 021 NULL";
 
-        for(String a : s1.split(teste)) {
-            System.out.println(a);
-        }
+        for(String a : s1.split(teste)) System.out.println(a);
+
         NumberFilter num = new NumberFilter(s1);
-        float[] a = num.filterNumber();
-        for(float b : a) System.out.println(b);
+        float[] numbersFiltred = num.filterNumber();
+        for(float filters : numbersFiltred) System.out.println(filters);
+
+        NumberFilterExtendsSplitterString n1 = new NumberFilterExtendsSplitterString(teste);
+        for(float filters : n1.filterNumbers()) System.out.println(filters);
 
     }
 }

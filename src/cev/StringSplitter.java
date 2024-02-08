@@ -72,7 +72,7 @@ public class StringSplitter implements IStringSplitter {
         } catch (NullPointerException e) { this.setSpr(false); }
     }
 
-    private String[] getsArray() {
+    protected String[] getsArray() {
         return this.sArray;
     }
 

@@ -5,10 +5,14 @@ package cev;
 public class Main {
     public static void main(String[] args) {
         StringSplitter s1 = new StringSplitter();
-        String teste = "EMPTY OR NULL";
+        String teste = "EMPTY 1 OR NULL";
 
         for(String a : s1.split(teste)) {
             System.out.println(a);
         }
+        NumberFilter num = new NumberFilter(s1);
+        float[] a = num.filterNumber();
+        for(float b : a) System.out.println(b);
+
     }
 }

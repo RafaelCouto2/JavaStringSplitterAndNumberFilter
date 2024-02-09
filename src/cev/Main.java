@@ -14,8 +14,8 @@ public class Main {
         ///////////////////////////__NumberFilter(StringSplitter instance)///////////////////////
 
         /*__NumberFilter num = new __NumberFilter(s1);
-        float[] numbersFiltred = num.filterNumber();
-        for(float filters : numbersFiltred) System.out.println(filters);**/
+        float[] numbersFiltered = num.filterNumber();
+        for(float filters : numbersFiltered) System.out.println(filters);**/
 
         /////////////////////////////NumberFilter(String){...}///////////////////////////////////
         //Split String and filter number. Inherit StringSplitter.

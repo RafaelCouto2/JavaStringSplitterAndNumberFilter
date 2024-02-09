@@ -1,5 +1,6 @@
 package cev;
 
 public interface INumberFilter {
-    float[] filterNumber();
+
+    float[] filterNumbers();
 }

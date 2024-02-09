@@ -70,7 +70,7 @@ public class StringSplitter implements IStringSplitter {
     }
 
     /**
-     * @return The String[].
+     * @return The String[] array.
      */
     public final String[] getsArray() {
         return this.sArray;

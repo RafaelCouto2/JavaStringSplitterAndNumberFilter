@@ -5,7 +5,7 @@ public final class NumberFilter extends StringSplitter implements INumberFilter 
 
     /**
      * Use getsArray() method to get the return of this String[].
-     * @param string Simply split the string into a String[] Array that'll be filtered.
+     * @param string Split the string into a String[] Array that'll be filtered.
      */
     public NumberFilter(String string){
         this.split(string);

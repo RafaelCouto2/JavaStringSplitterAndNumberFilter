@@ -2,6 +2,11 @@ package cev;
 
 public final class NumberFilter extends StringSplitter implements INumberFilter {
     private float [] numbers;
+
+    /**
+     * Use getsArray() method to get the return of this String[].
+     * @param string Simply split the string into a String[] Array that'll be filtered.
+     */
     public NumberFilter(String string){
         this.split(string);
         int totnumber= 0;
@@ -15,6 +20,11 @@ public final class NumberFilter extends StringSplitter implements INumberFilter 
         this.setNumbers(new float[totnumber]);
     }
 
+    /**
+     * Call getsArray() from StringSplitter and filter all the numbers into float[].
+     * @return float[] of the filtered numbers into a Float Array.
+     * If you already have filtered the numbers at this instance, use getNumbers() method instead.
+     */
     @Override
     public float[] filterNumbers(){
         int numberArrayPos = 0;
@@ -34,6 +44,10 @@ public final class NumberFilter extends StringSplitter implements INumberFilter 
         return this.getNumbers();
     }
 
+    /**
+     * @return Array float[] of numbers who was into og. String[].
+     * @throws NullPointerException
+     */
     public float[] getNumbers() throws NullPointerException {
         if(this.numbers.length > 0 ) return this.numbers;
         else {

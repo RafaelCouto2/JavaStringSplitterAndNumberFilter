@@ -4,6 +4,9 @@ public final class __NumberFilter implements I__NumberFilter {
     private StringSplitter rootString;
     private float[] numbers;
 
+    /**
+     * @param l Get the String[] instance and filter the numbers.
+     */
     public __NumberFilter(StringSplitter l){
         this.setRootString(l);
         int totnumber= 0;
@@ -17,6 +20,11 @@ public final class __NumberFilter implements I__NumberFilter {
         this.setNumbers(new float[totnumber]);
     }
 
+    /**
+     * Call the String[] and filter all the numbers into float[].
+     * @return float[] of the filtered numbers into a Float Array.
+     * If you already have filtered the numbers at this instance, use getNumbers() method instead.
+     */
     @Override
     public float[] filterNumber(){
         int numberArrayPos = 0;
@@ -48,6 +56,10 @@ public final class __NumberFilter implements I__NumberFilter {
         this.numbers = numbers;
     }
 
+    /**
+     * @return Array float[] of numbers who was into og. String[].
+     * @throws NullPointerException
+     */
     public float[] getNumbers() throws NullPointerException {
         if(this.numbers.length > 0 ) return this.numbers;
         else {

@@ -11,9 +11,10 @@ public class Main {
 
         /*__NumberFilterA num = new __NumberFilterA(s1);
         float[] numbersFiltred = num.filterNumber();
-        for(float filters : numbersFiltred) System.out.println(filters);*/
+        for(float filters : numbersFiltred) System.out.println(filters);**/
 
         NumberFilter n1 = new NumberFilter(teste);
+
         for(float filters : n1.filterNumbers()) System.out.println(filters);
 
     }

@@ -8,13 +8,10 @@ public class StringSplitter implements IStringSplitter {
     private String[] sArray;
     private boolean spr;
 
-    /** Return the substrings of this in a String Arrays.
-     * Example: <br>
+    /**
      * String ex = "THIS STRING WILL BE SEPARATED IN ARRAYS FOR EACH SPACE OR \",\" .";
-     * <br>
-     * <br>
-     * Return: <br>
-     * String[] "THIS", "STRING", "WILL", "BE", "SEPARATED", "IN", "ARRAYS", "FOR", "EACH", "SPACE", "OR" "","" **/
+     * @return Return the substrings of ex into a String[] Arrays.
+     * Use getsArray() method if you already have splitted the String >>at this instance<<.**/
     @Override
     public final String[] split(String txt)  {
         try {
@@ -72,6 +69,9 @@ public class StringSplitter implements IStringSplitter {
         } catch (NullPointerException e) { this.setSpr(false); }
     }
 
+    /**
+     * @return The splitted String[].
+     */
     public final String[] getsArray() {
         return this.sArray;
     }

@@ -58,7 +58,7 @@ public final class __NumberFilter implements I__NumberFilter {
 
     /**
      * @return Array float[] of numbers who was into og. String[].
-     * @throws NullPointerException
+     * @throws NullPointerException if there's no index.
      */
     public float[] getNumbers() throws NullPointerException {
         if(this.numbers.length > 0 ) return this.numbers;

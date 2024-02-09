@@ -46,7 +46,7 @@ public final class NumberFilter extends StringSplitter implements INumberFilter 
 
     /**
      * @return Array float[] of numbers who was into og. String[].
-     * @throws NullPointerException
+     * @throws NullPointerException if there's no index.
      */
     public float[] getNumbers() throws NullPointerException {
         if(this.numbers.length > 0 ) return this.numbers;

@@ -11,7 +11,7 @@ public class StringSplitter implements IStringSplitter {
     /**
      * String ex = "THIS STRING WILL BE SEPARATED IN ARRAYS FOR EACH SPACE OR \",\" .";
      * @return Return the substrings of ex into a String[] Arrays.
-     * Use getsArray() method if you already have splitted the String >>at this instance<<.**/
+     * Use getsArray() method if you already have the String >>at this instance<<.**/
     @Override
     public final String[] split(String txt)  {
         try {
@@ -70,7 +70,7 @@ public class StringSplitter implements IStringSplitter {
     }
 
     /**
-     * @return The splitted String[].
+     * @return The String[].
      */
     public final String[] getsArray() {
         return this.sArray;
